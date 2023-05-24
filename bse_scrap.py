@@ -36,7 +36,7 @@ class bse_scrape:
             counter = 0
             for row in file_data:
                 if row[2] == ticker:
-                    codes.append(file_data[counter][1])
+                    codes.append(str(file_data[counter][1]))
                     self.security_comapny.append([])
                     self.security_comapny[counter1].append(file_data[counter][0])
                     self.security_comapny[counter1].append(file_data[counter][1])
