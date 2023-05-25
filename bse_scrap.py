@@ -22,7 +22,7 @@ class bse_scrape:
        self.security_comapny=[[]]
     def get_security_code(self):
         file_data = []
-        with open (r"./Eqity_modify.csv",'r',encoding="utf-8") as file:
+        with open (r"./Eqity_modify.csv",'r',encoding="ISO-8859-1") as file:
             csvreader = csv.reader(file)
             for row in csvreader:
                 file_data.append(row)
